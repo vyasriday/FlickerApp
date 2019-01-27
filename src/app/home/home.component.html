@@ -1,0 +1,10 @@
+<h2 style="text-align: center ">Flickr Image</h2>
+<div class="image-grid">
+  <div *ngFor="let image of images | paginate: { itemsPerPage: 30, currentPage: p }">
+    <a  routerLink="/details/{{image.id}}">
+      <img  class="image-item" src={{image.imageUrl}} />
+    </a>
+    <app-rating [rating]="image.rating"></app-rating>
+  </div>
+  <pagination-controls style="width: 450px; margin: 0 auto" (pageChange)="p = $event"></pagination-controls>
+</div>

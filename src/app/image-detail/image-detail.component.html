@@ -1,0 +1,27 @@
+
+<div class="container">
+  <div class="image-detail">
+    <h4>Title: {{image.title}}</h4>
+    <img src={{image.imageUrl}} />
+    <p>Description: {{image.description}}</p>
+  </div>
+  <form class="review-form" #reviewForm="ngForm">
+    <div class="form-group">
+      <label> Name: <br/>
+      <input type="text" name="createdBy" [(ngModel)]="reviewData.createdBy" />
+      </label>
+    </div>
+    <div class="form-group">
+        <label> Rating: <br/>
+          <input type="number" max=10 min=1 name="rate" [(ngModel)]="reviewData.rating" placeholder=" Rating 1 - 10" />
+        </label>
+      </div>
+    <div class="form-group">
+      <label> Reason:<br/>
+        <textarea name="reason" [(ngModel)]="reviewData.reviewReason"></textarea>
+      </label>
+    </div>
+    <button type="button" (click)="submitReview(reviewData.rating)" [disabled]="!validateData(reviewData)">Submit</button>
+  </form>
+
+</div>

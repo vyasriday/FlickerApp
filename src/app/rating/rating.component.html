@@ -1,0 +1,8 @@
+<div class="rating">
+  <span *ngIf="!ratingArray.length">Not Rated Yet</span>
+  <span *ngFor="let i of ratingArray">
+    <i class="fa fa-star" aria-hidden="true"></i>
+  </span>
+  {{rating !==0 ? rating: ''}}
+</div>
+

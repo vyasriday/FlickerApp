@@ -1,0 +1,9 @@
+.rating {
+  padding-left: 12px;
+}
+
+i {
+  font-size: 16px;
+  color: orangered;
+  display: inline-block;
+}
