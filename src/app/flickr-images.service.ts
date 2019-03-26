@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 export class FlickrImagesService {
 
   // tslint:disable-next-line:max-line-length
-  url = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=373055aac8741a01f1cde294b0cfbbda&tags=food&content_type=1&extras=description&per_page=200&page=2&format=json&nojsoncallback=1&auth_token=72157678163179018-c51c00a6a6e4b2cd&api_sig=fe75a5b72a53441f835a276e4eede23d`;
+  url = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ca2aff1be1611fbd811c015edfeb8931&tags=Travel%2C+Food%2C+Kids&extras=title%2C+description&per_page=200&page=10&format=json&nojsoncallback=1&auth_token=72157706192800391-166555d109124394&api_sig=8f74adfbaeacf6190a4a1878999e8011`;
 
   constructor(private http: HttpClient) { }
 
